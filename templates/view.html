@@ -1,0 +1,22 @@
+
+
+<a href="{% url 'home' %}" target="_blank"><button title="link">back home</button></a>
+
+<hr>
+
+<h2>total word entered is {{ totalword }}</h2>
+
+{{ fulltext }}
+
+
+<h3>below is the key with its value</h3>
+
+{% for word,count in displaydata %}
+
+<b>{{ word }}</b> => {{ count }} :
+
+{% endfor %}
+
+<hr>
+
+{{displaydata}}
